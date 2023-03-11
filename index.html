@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header></header>
+        <nav class="navbar sticky-top w-75 m-auto p-2 navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/logo-sm.png" alt="Logo" width="40" class="d-inline-block align-text-top">
+                    GAME REVIEWS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-menu navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" data-category="mmorpg" aria-current="page" href="#">MMORPG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="shooter" href="#">SHOOTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="sailing" href="#">SAILING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="permadeath" href="#">PERMADEATH</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="superhero" href="#">SUPERHERO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="pixel" href="#">PIXEL</a>
+                  </li>
+            
+              </div>
+            </div>
+          </nav>
+          <div class="loading-parent">
+            <div class="loading d-flex justify-content-center align-items-center w-100 h-100">
+              <span class="loader"></span>
+            </div>
+          </div>
+        <section>
+          <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData" >
+            </div>
+          </div>
+        </section>
+        <div id="detailsPage" class="details d-none">
+          <div class="container position-relative">
+            <i id="DClose" class="fa-solid fa-xmark"></i>
+            <div class="content row">
+              <h2 class="mb-3">Game Details</h2>
+              <div class="col-md-4 ">
+                <img src="Images/thumbnail.jpg" class="w-100" id="detailsImg" alt="">
+              </div>
+              <div class="col-md-8 ">
+                <h2 id="DTitle">Title: Lost Ark</h2>
+                <h3>Category: <span id="DCategory">ARPG</span></h3>
+                
+                <h3>Platform: <span id="DPlatForm">Windows</span></h3>
+                
+                <h3>Status: <span id="DStatus">Live</span></h3>
+                
+                <p id="DParagraph">Smilegate’s free-to-play multiplayer ARPG is a massive adventure filled with lands waiting to be explored, people waiting to be met, and an ancient evil waiting to be destroyed. In Lost Ark, players enter the world of Arkesia and embark on a journey across several lands in a quest to locate the Ark of Legends. Stop the demon Kazeros and his army before they seize control. And hurry, the demons are searching for the Ark too. Choose to play as one of several classes ranging from the sword-wielding warrior to a mage or even the gunner – each with several advanced class options. Play alone or with friends (or acquaintances) to explore seven vast continents filled with strange cultures and creatures. Fight in PvP, explore dungeons, and work together in raids. Decide what you like to do best and go for it – but don’t forget to save the world. Lost Ark offers an easy-to-learn system with plenty of room to customize. Use the game’s ‘Tripod’ system to unlock up to three tiers of customization for each ability and create the combat style that works best for you. As for other features, Lost Ark offers crafting, guilds, and other systems players expect from online games. Whatever you want to do, it’s up to you.</p>
+                <a target="_blank" class="btn mt-3 btn-outline-warning" id="DBtn">Show Game</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
